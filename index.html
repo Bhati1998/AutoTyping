@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing. . .</title>
+    <style>
+        p{
+            color: orangered;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <script>
+        var text = "Hello World! In lacinia ornare felis, vel egestas ante pharetra ut. Nullam sagittis convallis nunc, non blandit justo suscipit nec. Nulla vitae ligula metus. Nam ac neque at est varius hendrerit ac in nisl. Praesent mollis enim consequat, vestibulum sem quis, eleifend dolor. Pellentesque dapibus varius porta. Fusce ligula diam, sodales vel ligula in, sodales ultrices nisl. Duis placerat aliquam quam. Maecenas a feugiat mauris."
+        var i = 0;
+        var typingSpeed = 100;
+        function typeText(){
+            if(text.length > 0){
+                document.querySelector("p").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeText, typingSpeed);
+            }
+        }
+        typeText();
+    </script>
+</body>
+</html>
