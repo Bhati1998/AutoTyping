@@ -1,2 +1,2 @@
 # AutoTyping
-Auto typing the texts in browser
+Script that types the text automatically in browser window
